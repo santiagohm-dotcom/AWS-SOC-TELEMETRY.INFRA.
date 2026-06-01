@@ -1,0 +1,43 @@
+# ==============================================================================
+# ASOP Lab - Development Variables Template
+# ==============================================================================
+# Copy this file to 'dev.tfvars' and fill in your values
+# DO NOT commit dev.tfvars to version control (it contains sensitive data)
+# ==============================================================================
+
+# ------------------------------------------------------------------------------
+# AWS Configuration
+# ------------------------------------------------------------------------------
+aws_region = "us-east-1"
+
+# ------------------------------------------------------------------------------
+# Network Configuration (Optional - defaults work for most labs)
+# ------------------------------------------------------------------------------
+# vpc_cidr         = "10.0.0.0/16"
+# kali_subnet_cidr = "10.0.10.0/24"
+# lab_subnet_cidr  = "10.0.20.0/24"
+
+# ------------------------------------------------------------------------------
+# Security
+# ------------------------------------------------------------------------------
+# Your public IP address with CIDR mask (find it with: curl ifconfig.me)
+# Example: "203.0.113.45/32"
+my_public_ip = "YOUR_PUBLIC_IP_HERE/32"
+
+# Name of your AWS SSH key pair (must already exist in AWS)
+key_name = "YOUR_KEY_PAIR_NAME"
+
+# ------------------------------------------------------------------------------
+# Instance Types (Optional - defaults optimized for low-tier)
+# ------------------------------------------------------------------------------
+# instance_type_siem   = "t3.medium"  # Required for Elasticsearch (4GB RAM)
+# instance_type_sensor = "t3.micro"   # Suricata + Docker honeypots
+# instance_type_kali   = "t3.micro"   # Kali attacker node
+
+# ------------------------------------------------------------------------------
+# Storage (Optional - defaults are sufficient)
+# ------------------------------------------------------------------------------
+# root_volume_size_siem   = 30
+# root_volume_size_sensor = 20
+# root_volume_size_kali   = 20
+# root_volume_type        = "gp3"

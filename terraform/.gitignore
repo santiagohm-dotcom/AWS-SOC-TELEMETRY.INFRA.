@@ -1,0 +1,6 @@
+# Terraform sensitive files
+dev.tfvars
+*.tfstate
+*.tfstate.*
+*.tfplan
+.terraform/
